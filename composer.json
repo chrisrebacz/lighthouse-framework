@@ -1,0 +1,33 @@
+{
+    "name": "chrisrebacz/flow",
+    "type": "wordpress-muplugin",
+    "description": "Functionality to develop in WordPress using a Laravel-like approach",
+    "autoload": {
+        "psr-4": {
+            "Flow\\": "app/"
+        },
+        "files": [
+            "vendor/illuminate/support/helpers.php", "helpers/framework.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.6.4",
+        "composer/installers": "~1.0",
+        "enshrined/svg-sanitize": "0.*",
+        "filp/whoops": "^2.1",
+        "illuminate/container": "~5.4.0",
+        "illuminate/database": "~5.4.0",
+        "illuminate/support": "~5.4.0",
+        "illuminate/events": "~5.4.0",
+        "doctrine/dbal": "^2.6",
+        "symfony/finder": "~2.7",
+        "symfony/var-dumper": "^4.0",
+        "symfony/debug": "~2.7"
+    },
+    "require-dev": {
+        "lucatume/wp-browser": "~1.21"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
