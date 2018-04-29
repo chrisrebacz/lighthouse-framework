@@ -1,0 +1,46 @@
+<?php 
+/**
+ * Plugin Name: Lighthouse Framework
+ * Description: Framework to help with WordPress development, utilizing Laravel-like structure like an IOC container, service providers, and even Eloquent if needed. 
+ * Author: Chris Rebacz
+ * Version: 2.0.0
+ */
+
+if (!defined('ABSPATH')) {
+    die;
+}
+
+$pluginFile = __DIR__ . '/lighthouse-framework/start.php';
+if (!file_exists($pluginFile)) {
+    add_action('admin_notices', function () {
+        echo '<div class="notice notice-error"><h3 style="padding-bottom:0; margin-bottom: 0;">Unable to find Lighthouse Framework</h3><p>In order to utilize the Lighthouse Framework as a must-use plugin, the mu plugin file needs to be able to locate the framework\'s directory.</p></div>';
+    });
+    return;
+}
+
+/*
+|----------------------------------------------------------------
+| SET MU PLUGIN CONSTANTS
+|----------------------------------------------------------------
+| 
+ */
+define('LIGHTHOUSE_BASEFILE', __FILE__);
+define('LIGHTHOUSE_PLUGIN_BASENAME', plugin_basename(LIGHTHOUSE_BASEFILE));
+
+define('LH_VERSION', '2.0.0');
+define('LH_TEXT_DOMAIN', 'lh');
+define('LH_LATE_PRIORITY', 9999999);
+
+global $wpdb;
+define("LH_DB_PREFIX", $wpdb->prefix);
+define('LH_UPLOADS', wp_upload_dir()['basedir']);
+define('LH_UPLOADS_URL', wp_upload_dir()['url']);
+
+
+/*
+|-----------------------------------------------------------
+| Bootstrap Lighthouse Framework
+|-----------------------------------------------------------
+| Finally ready to bootstrap the framework. 
+ */
+require $pluginFile;
