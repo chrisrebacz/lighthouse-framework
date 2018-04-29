@@ -4,7 +4,7 @@
     "description": "Functionality to develop in WordPress using a Laravel-like approach",
     "autoload": {
         "psr-4": {
-            "Flow\\": "app/"
+            "Lighthouse\\": "src/"
         },
         "files": [
             "vendor/illuminate/support/helpers.php", "helpers/framework.php"

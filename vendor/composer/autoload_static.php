@@ -38,6 +38,10 @@ class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
         array (
             'Psr\\Log\\' => 8,
         ),
+        'L' => 
+        array (
+            'Lighthouse\\' => 11,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -45,10 +49,6 @@ class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
             'Illuminate\\Database\\' => 20,
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
-        ),
-        'F' => 
-        array (
-            'Flow\\' => 5,
         ),
         'D' => 
         array (
@@ -100,6 +100,10 @@ class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Lighthouse\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/support',
@@ -119,10 +123,6 @@ class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
         'Illuminate\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
-        ),
-        'Flow\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
