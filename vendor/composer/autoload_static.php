@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
+class ComposerStaticInit6bb0e091243ab97e1cf074d4a48ffca5
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -886,6 +886,69 @@ class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
         'Illuminate\\Support\\Traits\\Macroable' => __DIR__ . '/..' . '/illuminate/support/Traits/Macroable.php',
         'Illuminate\\Support\\ViewErrorBag' => __DIR__ . '/..' . '/illuminate/support/ViewErrorBag.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
+        'Lighthouse\\Components\\AdminPage' => __DIR__ . '/../..' . '/src/Components/AdminPage.php',
+        'Lighthouse\\Components\\PostType' => __DIR__ . '/../..' . '/src/Components/PostType.php',
+        'Lighthouse\\Components\\Taxonomy' => __DIR__ . '/../..' . '/src/Components/Taxonomy.php',
+        'Lighthouse\\Container' => __DIR__ . '/../..' . '/src/Container.php',
+        'Lighthouse\\Filesystem\\Filesystem' => __DIR__ . '/../..' . '/src/Filesystem/Filesystem.php',
+        'Lighthouse\\FrameworkServiceProvider' => __DIR__ . '/../..' . '/src/FrameworkServiceProvider.php',
+        'Lighthouse\\Registries\\AdminPageRegistry' => __DIR__ . '/../..' . '/src/Registries/AdminPageRegistry.php',
+        'Lighthouse\\Registries\\ContentRegistry' => __DIR__ . '/../..' . '/src/Registries/ContentRegistry.php',
+        'Lighthouse\\Registries\\UserRolesRegistry' => __DIR__ . '/../..' . '/src/Registries/UserRolesRegistry.php',
+        'Lighthouse\\Routing\\Api\\BaseController' => __DIR__ . '/../..' . '/src/Routing/Api/BaseController.php',
+        'Lighthouse\\Routing\\RewriteRules\\Admin\\RewriteRulesAdmin' => __DIR__ . '/../..' . '/src/Routing/RewriteRules/Admin/RewriteRulesAdmin.php',
+        'Lighthouse\\Routing\\RewriteRules\\Admin\\RewriteRulesListTable' => __DIR__ . '/../..' . '/src/Routing/RewriteRules/Admin/RewriteRulesListTable.php',
+        'Lighthouse\\Routing\\RewriteRules\\Admin\\RewriteRulesPage' => __DIR__ . '/../..' . '/src/Routing/RewriteRules/Admin/RewriteRulesPage.php',
+        'Lighthouse\\Security\\BcryptPasswordHasher' => __DIR__ . '/../..' . '/src/Security/BcryptPasswordHasher.php',
+        'Lighthouse\\Security\\RestrictSiteAccess' => __DIR__ . '/../..' . '/src/Security/RestrictSiteAccess.php',
+        'Lighthouse\\Settings\\ConfigFiles' => __DIR__ . '/../..' . '/src/Settings/ConfigFiles.php',
+        'Lighthouse\\Settings\\DatabaseOptions' => __DIR__ . '/../..' . '/src/Settings/DatabaseOptions.php',
+        'Lighthouse\\Support\\Database\\DbTable' => __DIR__ . '/../..' . '/src/Support/Database/DbTable.php',
+        'Lighthouse\\Support\\Plugin' => __DIR__ . '/../..' . '/src/Support/Plugin.php',
+        'Lighthouse\\Support\\Repository' => __DIR__ . '/../..' . '/src/Support/Repository.php',
+        'Lighthouse\\Support\\Traits\\ArrayedFileLoader' => __DIR__ . '/../..' . '/src/Support/Traits/ArrayedFileLoader.php',
+        'Lighthouse\\Utilities\\AddContentTypes' => __DIR__ . '/../..' . '/src/Utilities/AddContentTypes.php',
+        'Lighthouse\\Utilities\\BuildDirectories' => __DIR__ . '/../..' . '/src/Utilities/BuildDirectories.php',
+        'Lighthouse\\Utilities\\CreateTables' => __DIR__ . '/../..' . '/src/Utilities/CreateTables.php',
+        'Lighthouse\\Utilities\\CreateUserRolesAndCaps' => __DIR__ . '/../..' . '/src/Utilities/CreateUserRolesAndCaps.php',
+        'Lighthouse\\Utilities\\PublishOptions' => __DIR__ . '/../..' . '/src/Utilities/PublishOptions.php',
+        'Lighthouse\\Utilities\\RebuildCacheFile' => __DIR__ . '/../..' . '/src/Utilities/RebuildCacheFile.php',
+        'Lighthouse\\Utilities\\RunCustomUtility' => __DIR__ . '/../..' . '/src/Utilities/RunCustomUtility.php',
+        'Lighthouse\\Utilities\\Utility' => __DIR__ . '/../..' . '/src/Utilities/Utility.php',
+        'Lighthouse\\View\\Compilers\\BladeCompiler' => __DIR__ . '/../..' . '/src/View/Compilers/BladeCompiler.php',
+        'Lighthouse\\View\\Compilers\\Compiler' => __DIR__ . '/../..' . '/src/View/Compilers/Compiler.php',
+        'Lighthouse\\View\\Compilers\\CompilerInterface' => __DIR__ . '/../..' . '/src/View/Compilers/CompilerInterface.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesAuthorizations' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesAuthorizations.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesComments' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesComments.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesComponents' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesComponents.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesConditionals' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesConditionals.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesEchos' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesEchos.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesIncludes' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesIncludes.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesInjections' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesInjections.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesLayouts' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesLayouts.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesLoops' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesLoops.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesRawPhp' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesRawPhp.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesStacks' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesStacks.php',
+        'Lighthouse\\View\\Compilers\\Concerns\\CompilesTranslations' => __DIR__ . '/../..' . '/src/View/Compilers/Concerns/CompilesTranslations.php',
+        'Lighthouse\\View\\Concerns\\ManagesComponents' => __DIR__ . '/../..' . '/src/View/Concerns/ManagesComponents.php',
+        'Lighthouse\\View\\Concerns\\ManagesEvents' => __DIR__ . '/../..' . '/src/View/Concerns/ManagesEvents.php',
+        'Lighthouse\\View\\Concerns\\ManagesLayouts' => __DIR__ . '/../..' . '/src/View/Concerns/ManagesLayouts.php',
+        'Lighthouse\\View\\Concerns\\ManagesLoops' => __DIR__ . '/../..' . '/src/View/Concerns/ManagesLoops.php',
+        'Lighthouse\\View\\Concerns\\ManagesStacks' => __DIR__ . '/../..' . '/src/View/Concerns/ManagesStacks.php',
+        'Lighthouse\\View\\Concerns\\ManagesTranslations' => __DIR__ . '/../..' . '/src/View/Concerns/ManagesTranslations.php',
+        'Lighthouse\\View\\Engines\\CompilerEngine' => __DIR__ . '/../..' . '/src/View/Engines/CompilerEngine.php',
+        'Lighthouse\\View\\Engines\\Engine' => __DIR__ . '/../..' . '/src/View/Engines/Engine.php',
+        'Lighthouse\\View\\Engines\\EngineInterface' => __DIR__ . '/../..' . '/src/View/Engines/EngineInterface.php',
+        'Lighthouse\\View\\Engines\\EngineResolver' => __DIR__ . '/../..' . '/src/View/Engines/EngineResolver.php',
+        'Lighthouse\\View\\Engines\\FileEngine' => __DIR__ . '/../..' . '/src/View/Engines/FileEngine.php',
+        'Lighthouse\\View\\Engines\\PhpEngine' => __DIR__ . '/../..' . '/src/View/Engines/PhpEngine.php',
+        'Lighthouse\\View\\Factory' => __DIR__ . '/../..' . '/src/View/Factory.php',
+        'Lighthouse\\View\\FileViewFinder' => __DIR__ . '/../..' . '/src/View/FileViewFinder.php',
+        'Lighthouse\\View\\Middleware\\ShareErrorsFromSession' => __DIR__ . '/../..' . '/src/View/Middleware/ShareErrorsFromSession.php',
+        'Lighthouse\\View\\View' => __DIR__ . '/../..' . '/src/View/View.php',
+        'Lighthouse\\View\\ViewFinderInterface' => __DIR__ . '/../..' . '/src/View/ViewFinderInterface.php',
+        'Lighthouse\\View\\ViewName' => __DIR__ . '/../..' . '/src/View/ViewName.php',
+        'Lighthouse\\View\\ViewServiceProvider' => __DIR__ . '/../..' . '/src/View/ViewServiceProvider.php',
         'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/AbstractLogger.php',
         'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/Psr/Log/InvalidArgumentException.php',
         'Psr\\Log\\LogLevel' => __DIR__ . '/..' . '/psr/log/Psr/Log/LogLevel.php',
@@ -1076,11 +1139,11 @@ class ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitb5c2e7ff8fea7a8e0bd95ca10a7e93cc::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6bb0e091243ab97e1cf074d4a48ffca5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6bb0e091243ab97e1cf074d4a48ffca5::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit6bb0e091243ab97e1cf074d4a48ffca5::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit6bb0e091243ab97e1cf074d4a48ffca5::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit6bb0e091243ab97e1cf074d4a48ffca5::$classMap;
 
         }, null, ClassLoader::class);
     }
