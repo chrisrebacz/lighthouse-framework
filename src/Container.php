@@ -97,7 +97,7 @@ class Container extends IlluminateContainer
     public function isNetwork()
     {
         $plugins = get_site_option('active_sitewide_plugins');
-
+        
         if (is_multisite() && isset($plugins[$this->baseName])) {
             return true;
         }
@@ -417,7 +417,7 @@ class Container extends IlluminateContainer
     public function storagePath($path = null)
     {
         $storagePath = null;
-        $default = wp_upload_dir()['basename'];
+        $default = wp_upload_dir()['basedir'];
         if (defined('LH_UPLOADS')) {
             $storagePath = rtrim(LH_UPLOADS, '/') . '/lighthouse';
         }
@@ -519,5 +519,38 @@ class Container extends IlluminateContainer
     {
         return false;
     }
-    
+
+    /**
+     * Bind directory paths into the container for use 
+     * in the application.
+     * @param array $paths
+     * @return void
+     */
+    public function bindPathsInContainer($paths = [])
+    {
+        if (! is_array($paths)) {
+            return;
+        }    
+
+        foreach($paths as $key => $path) {
+            $this->instance('path.'.$key, $path);
+        }
+    }
+
+    /**
+     * Bind a set of URIs into the container for use within
+     * the plugin.
+     * @param array $uris
+     * @return void
+     */
+    public function bindUrisInContainer($uris = [])
+    {
+        if (! is_array($uris)) {
+            return;
+        }
+
+        foreach($uris as $key => $uri) {
+            $this->instance('uri.'.$key, $uri);
+        }
+    }
 }

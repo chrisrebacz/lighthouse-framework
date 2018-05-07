@@ -1,0 +1,17 @@
+<?php 
+namespace DummyNamespapce;
+
+use Lighthouse\Support\Plugin as LighthousePlugin;
+
+class DummyPluginName extends LighthousePlugin
+{
+    public function register()
+    {
+        //
+    }
+
+    public function boot()
+    {
+        //
+    }
+}

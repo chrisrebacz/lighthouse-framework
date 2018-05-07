@@ -26,9 +26,6 @@ class CreateUserRolesAndCaps extends Utility
 
             if (isset($this->config['roles'])) {
                 $this->createRoles($this->config['roles']);
-                if (isset($this->config['access'])) {
-                    $this->buildUserRolePermissions($this->config['access']);
-                }
             }
         }
     }
@@ -140,25 +137,6 @@ class CreateUserRolesAndCaps extends Utility
                 $cap = (string) $cap;
                 $wp_roles->remove_cap($role, $cap);
             }
-        }
-    }
-
-    public function buildUserRolePermissions($access)
-    {
-        $this->createAccessCategories($access['terms'], 0, $access['taxonomy']);
-    }
-
-    /**
-     * Create taxonomy terms for access/content permissions
-     * @param  array  $terms
-     * @param  integer $term_id
-     * @return void
-     */
-    protected function createAccessCategories($terms, $term_id = 0, $taxonomy = 'category')
-    {
-        if (file_exists (ABSPATH.'/wp-admin/includes/taxonomy.php')) {
-            require_once (ABSPATH.'/wp-admin/includes/taxonomy.php'); 
-            lighthouse_create_access_category($terms, $term_id, $taxonomy);
         }
     }
 }

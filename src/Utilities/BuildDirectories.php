@@ -10,9 +10,13 @@ class BuildDirectories extends Utility
             $this->config = app('config')->get('app.storage', []);
         }
 
+        if (empty($this->baseDir)) {
+            $this->baseDir = app('path.uploads').'/lighthouse';
+        }
+
         foreach ($this->config as $name) {
             if (function_exists('wp_mkdir_p')) {
-                $path = app()->storagePath().'/'.$name;
+                $path = $this->baseDir.'/'.$name;
                 wp_mkdir_p($path);
             }
         }

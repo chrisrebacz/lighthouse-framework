@@ -1,0 +1,12 @@
+<?php
+namespace DummyNamespace;
+
+use Lighthouse\Support\Activation as LighthouseActivation;
+
+class Activation extends LighthouseActivation
+{
+    public static function run ()
+    {
+        //
+    }
+}

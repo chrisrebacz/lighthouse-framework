@@ -171,3 +171,12 @@ if (!function_exists('writeLog')) {
         }
     }
 }
+
+if (! function_exists('lighthouse_user_role_exists')) {
+    function lighthouse_user_role_exists($role) {
+        if (!empty($role)) {
+            return $GLOBALS['wp_roles']->is_role($role);
+        }
+        return false;
+    }
+}
