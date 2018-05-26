@@ -23,7 +23,7 @@
         "symfony/finder": "~2.7",
         "symfony/var-dumper": "^4.0",
         "symfony/debug": "~2.7"
-    }
+    },
     "config": {
         "optimize-autoloader": true
     }
