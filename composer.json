@@ -1,5 +1,5 @@
 {
-    "name": "chrisrebacz/flow",
+    "name": "chrisrebacz/lighthouse-framework",
     "type": "wordpress-muplugin",
     "description": "Functionality to develop in WordPress using a Laravel-like approach",
     "autoload": {
@@ -23,10 +23,7 @@
         "symfony/finder": "~2.7",
         "symfony/var-dumper": "^4.0",
         "symfony/debug": "~2.7"
-    },
-    "require-dev": {
-        "lucatume/wp-browser": "~1.21"
-    },
+    }
     "config": {
         "optimize-autoloader": true
     }
