@@ -11,6 +11,8 @@ return array(
     '72579e7bd17821bb1321b87411366eae' => $vendorDir . '/illuminate/support/helpers.php',
     '25072dd6e2470089de65ae7bf11d3109' => $vendorDir . '/symfony/polyfill-php72/bootstrap.php',
     '667aeda72477189d0494fecd327c3641' => $vendorDir . '/symfony/var-dumper/Resources/functions/dump.php',
-    '4271f0399f48cf6af79d40ed587b8a46' => $vendorDir . '/illuminate/support/helpers.php',
-    '271b70364577e9fae00e9ac1e24af767' => $baseDir . '/helpers/framework.php',
+    '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+    '051bafe20e2674435a162870efa2d2a7' => $vendorDir . '/brain/monkey/inc/api.php',
+    '433c0d6d531f8b23afe6bc7d616e9f99' => $vendorDir . '/illuminate/support/helpers.php',
+    '979740da5b5ba2f8f12f250a46b88a0d' => $baseDir . '/helpers/framework.php',
 );
